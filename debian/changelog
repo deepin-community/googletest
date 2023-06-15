@@ -1,3 +1,26 @@
+googletest (1.12.1-0.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix arch/indep builds
+
+ -- Mattias Ellert <mattias.ellert@physics.uu.se>  Mon, 04 Jul 2022 20:57:26 +0200
+
+googletest (1.12.1-0.1) unstable; urgency=medium
+
+  [ Mattias Ellert ]
+  * Non-maintainer upload.
+  * [619c5dc] New upstream version 1.12.1
+  * [adfa60f] Drop the googletest-tools package
+    (the scripts it contained are no longer included in the sources)
+  * [daecf68] Drop the memory saving tweaks
+    (the huge gmock-matchers test was split in 4 smaller tests)
+  * [8dcd1ed] Update/Drop patches for upstream 1.12.1
+
+  [ Steve Robbins ]
+  * [a266788] Remove obsoleted file pattern
+
+ -- Mattias Ellert <mattias.ellert@physics.uu.se>  Mon, 04 Jul 2022 16:09:39 +0200
+
 googletest (1.11.0-3) unstable; urgency=medium
 
   [ Steve Robbins ]
