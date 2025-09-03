@@ -1,7 +1,11 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-export DEB_CXXFLAGS_MAINT_APPEND = -fPIC
+export DEB_CXXFLAGS_MAINT_APPEND = -fPIC -ffloat-store
+
+ifeq ($(DEB_HOST_ARCH), armel)
+DEB_CXXFLAGS_MAINT_APPEND += -O1
+endif
 
 %:
 	dh $@
@@ -11,7 +15,7 @@ override_dh_auto_configure:
 
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-	cd obj-* && ctest || (cat Testing/Temporary/LastTest.log; exit 1)
+	unset SOURCE_DIR; cd obj-* && ctest || (cat Testing/Temporary/LastTest.log; exit 1)
 endif
 
 override_dh_prep:

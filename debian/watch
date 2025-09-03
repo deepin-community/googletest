@@ -1,0 +1,2 @@
+version=4
+opts=filenamemangle=s/.*\/v(\d[\d\.]+)\.tar\.gz/googletest-$1\.tar\.gz/ https://github.com/google/googletest/tags .*\/v(\d[\d\.]+)\.tar\.gz

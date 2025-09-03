@@ -1,0 +1,6 @@
+googletest (1.17.0-1) unstable; urgency=medium
+
+  GoogleTest no longer supports C++ versions less than C++17.
+
+ -- Steve M. Robbins <smr@debian.org>  Wed, 13 Aug 2025 18:39:54 -0500
+ 
