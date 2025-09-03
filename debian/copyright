@@ -1,4 +1,4 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/    
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Google C++ Testing Framework
 Upstream-Source: https://github.com/google/googletest
 
@@ -35,7 +35,7 @@ License: BSD-C3
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: debian/*
-Copyright: 
+Copyright:
  Copyright 2009, Steve Robbins <smr@debian.org>, Giuseppe Iuculano <giuseppe@iuculano.it
 License: GAP
  Copying and distribution of these files, with or without
