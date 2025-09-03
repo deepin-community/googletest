@@ -1,3 +1,92 @@
+googletest (1.17.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.7.2 (routine-update)
+
+ -- Steve M. Robbins <smr@debian.org>  Wed, 13 Aug 2025 18:39:54 -0500
+
+googletest (1.16.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.7.0 (routine-update)
+
+ -- Steve M. Robbins <smr@debian.org>  Wed, 12 Feb 2025 23:28:24 -0600
+
+googletest (1.15.2-1) unstable; urgency=medium
+
+  [ Steve Robbins ]
+  * [a25b950] New upstream version 1.15.2
+  * [f0ddd9d] Fix build failure with clang/c++14 by testing the C++ language version.
+  * [08e7c7a] Refresh patches
+
+ -- Steve M. Robbins <smr@debian.org>  Sun, 11 Aug 2024 11:11:27 -0500
+
+googletest (1.15.0-1) unstable; urgency=medium
+
+  [ Steve Robbins ]
+  * [405139d] New upstream version 1.15.0
+  * [d5daee9] unset SOURCE_DIR to avoid breaking test script.
+
+ -- Steve M. Robbins <smr@debian.org>  Wed, 24 Jul 2024 18:19:47 -0500
+
+googletest (1.14.0-1) unstable; urgency=medium
+
+  [ Steve Robbins ]
+  * [9706ecc] Adjust regexp to avoid prerelease versions such as 1.13.0-pre
+  * [16a6391] New upstream version 1.14.0
+  * [5a69152] Remove obsolete patch
+  * [d3e126e] Rebase patches.
+
+ -- Steve M. Robbins <smr@debian.org>  Thu, 24 Aug 2023 21:39:13 -0500
+
+googletest (1.13.0-5) unstable; urgency=medium
+
+  * Standards-Version: 4.6.2 (routine-update)
+  * Remove trailing whitespace in debian/changelog (routine-update)
+  * Remove trailing whitespace in debian/copyright (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * [cfe72f4] Add cast to silence implicit conversion warning.
+    Fixes ms-gsl autopkgtest failure.
+
+ -- Steve M. Robbins <smr@debian.org>  Fri, 30 Jun 2023 17:37:22 -0500
+
+googletest (1.13.0-4) unstable; urgency=medium
+
+  [ Steve Robbins ]
+  * [f0f4335] Build armel with -O1 to avoid compile issue.
+
+ -- Steve M. Robbins <smr@debian.org>  Wed, 21 Jun 2023 18:09:27 -0500
+
+googletest (1.13.0-3) unstable; urgency=medium
+
+  [ Steve Robbins ]
+  * [8ae6af6] Build with stricter control on floating point -- avoids test failures on x86.
+
+ -- Steve M. Robbins <smr@debian.org>  Mon, 19 Jun 2023 00:50:31 -0500
+
+googletest (1.13.0-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Steve M. Robbins <smr@debian.org>  Wed, 14 Jun 2023 20:43:36 -0500
+
+googletest (1.13.0-1) experimental; urgency=medium
+
+  [ Debian Janitor ]
+  * [95473bc] Trim trailing whitespace.
+  * [95e9afe] Use correct machine-readable copyright file URI.
+  * [d206b39] Set debhelper-compat version in Build-Depends.
+  * [172b48c] Set upstream metadata fields: Bug-Database, Bug-Submit,
+    Repository-Browse.
+
+  [ Steve Robbins ]
+  * [12646e0] New upstream version 1.13.0
+  * [4a32c7b] Rebase patches.
+  * [ccc97da] Update patch for version.
+
+ -- Steve M. Robbins <smr@debian.org>  Sun, 29 Jan 2023 14:30:05 -0600
+
 googletest (1.12.1-0.2) unstable; urgency=medium
 
   * Non-maintainer upload.
@@ -66,7 +155,7 @@ googletest (1.10.0.20201025-1) unstable; urgency=medium
   [ Steve Robbins ]
   * [9ce1377] New upstream version 1.10.0.20201025
   * [2e546ca] New 0005-Add-GoogleTest-version-to-each-sub-project-to-allow-.patch
-    to allow builds using /usr/src/googletest/googletest.  The recommended method 
+    to allow builds using /usr/src/googletest/googletest.  The recommended method
     is to build using /usr/src/googletest, however.  Closes: #972618, #972774, #972775.
 
  -- Steve M. Robbins <smr@debian.org>  Sun, 25 Oct 2020 23:32:56 -0500
